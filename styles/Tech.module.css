@@ -1,0 +1,90 @@
+.topSection {
+    background-color: black;
+    color: white;
+}
+
+.topSection h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.topSection * {
+    margin: 0;
+    padding: 0;
+}
+
+.topSection p {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 500px;
+}
+
+.topSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px
+}
+
+.sectionTwo {
+    display: flex;
+}
+
+.sectionTwo .right {
+    width: 50%;
+    background-color: rgb(119, 199, 172);
+    padding: 50px;
+}
+
+.sectionTwo .left {
+    width: 50%;
+    background-color: rgb(159, 224, 186);
+    padding: 50px;
+}
+
+.sectionTwo * *  {
+    margin: 0;
+    padding: 0;
+}
+
+.sectionTwo * h1 {
+    font-size: 4rem;
+}
+
+.sectionTwo * p {
+    font-size: 2rem;
+}
+.sectionTwoReverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.sectionTwoReverse .right {
+    width: 50%;
+    background-color: rgb(64, 139, 114);
+    padding: 50px;
+}
+
+.sectionTwoReverse .left {
+    width: 50%;
+    background-color: rgb(118, 233, 166);
+    padding: 50px;
+}
+
+.sectionTwoReverse * * {
+    margin: 0;
+    padding: 0;
+}
+
+.sectionTwoReverse * h1 {
+    font-size: 4rem;
+}
+
+.sectionTwoReverse * p {
+    font-size: 2rem;
+}
+
+.threed {
+    height: 85vh;
+}

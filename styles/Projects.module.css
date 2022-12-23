@@ -1,0 +1,48 @@
+.container {
+    background-color: black;
+    color: white;
+}
+
+.topSection * {
+    margin: 0;
+    padding: 0;
+}
+
+.topSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 0 100px 0;
+}
+
+.topSection h1 {
+    font-size: 5rem;
+}
+
+.topSection p {
+    margin: 0 500px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.projectsSection {
+    background-color: #00CA8D;
+    color: black;
+    padding: 50px 50px;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52vh;
+}
+
+.projects * {
+    margin: 10px;
+}
+.projects h1 {
+    font-size: 3.5rem;
+    text-align: center;
+}

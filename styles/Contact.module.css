@@ -1,0 +1,62 @@
+.container {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+.topSection {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.topSection h1 {
+    font-size: 5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.topSection p {
+    font-size: 2rem;
+    margin: 0 30%;
+    text-align: center;
+}
+
+.contactSection {
+    background-color: #00CA8D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10%;
+}
+
+.contactSection * {
+    width: 50%;
+    margin: 10px 0;
+    padding: 25px;
+    outline: none;
+    border: none;
+    
+}
+
+.contactSection button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition-duration: .3s;
+}
+
+.contactSection button:hover {
+    background-color: rgb(34, 34, 34);
+}
+
+.contactSection textarea {
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
