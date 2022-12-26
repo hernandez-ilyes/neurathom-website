@@ -1,11 +1,12 @@
 import Layout from "../layouts/Layout";
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import "../styles/globals.css";
+import styles from "../styles/loader.module.css"
 import "react-toastify/dist/ReactToastify.css";
-import { ToastContainer } from "react-toastify";
+import {ToastContainer} from "react-toastify";
 import {gsap} from 'gsap'
 
-function MyApp({ Component, pageProps }) {
+function MyApp({Component, pageProps}) {
     const [loaded, setLoaded] = useState(false)
     const loadingBar = useRef()
 
@@ -24,30 +25,35 @@ function MyApp({ Component, pageProps }) {
         }, 4000)
     }, [])
 
-  return (
-    <>
-        <div>
-            {!loaded && (
-                <div style={{height: "100vh", fontSize: "3rem",paddingBottom: 50, paddingLeft: 100, backgroundImage: "url('loader.png')", backgroundSize: "cover", display: "flex", alignItems: "left", justifyContent: "center", flexDirection: "column"}}>
-                    <h1>Bienvenue !</h1>
-                    <div style={{backgroundColor: "black", height: 25, width: 500, borderRadius: 25}}>
-                        <div ref={loadingBar} style={{width: "0%", height: "100%", backgroundColor: "#000DFF", borderRadius: 25}}>
-
+    return (
+        <>
+            <div>
+                {!loaded && (
+                    <div className={styles.loader}
+                         style={{
+                             backgroundImage: "url('loader.png')",
+                             backgroundPosition: "center",
+                             backgroundSize: "cover"
+                         }}>
+                        <h1>Bienvenue !</h1>
+                        <div className={styles.bgLoader}>
+                            <div ref={loadingBar}
+                                 style={{width: "0%", height: "100%", backgroundColor: "blue", borderRadius: 25}}>
+                            </div>
                         </div>
                     </div>
-                </div>
-            )}
-            {loaded && (
-                <div>
-                    <Layout>
-                        <Component {...pageProps} />
-                    </Layout>
-                    <ToastContainer />
-                </div>
                 )}
-        </div>
-    </>
-  );
+                {loaded && (
+                    <div>
+                        <Layout>
+                            <Component {...pageProps} />
+                        </Layout>
+                        <ToastContainer/>
+                    </div>
+                )}
+            </div>
+        </>
+    );
 }
 
 export default MyApp;
