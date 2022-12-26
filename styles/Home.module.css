@@ -1,186 +1,356 @@
 .container {
-  padding: 0;
-  background-color: black;
-  color: white;
+    padding: 0;
+    background-color: black;
+    color: white;
 }
 
 .container main {
-  display: flex;
-  margin: 0 25vw;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    margin: 0 50px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .container main * {
-  margin: .5vw 0vw;
+    margin: .5vw 0vw;
 }
 
 .container main div {
-  width: 80vw;
-  height: 40vw;
-  background-color: white;
-  margin-bottom: 50px;
+    width: 80vw;
+    height: 40vw;
+    background-color: white;
+    margin-bottom: 50px;
 }
 
 .container main *::selection {
-  background-color: rgba(255, 255, 255, 0.5)
+    background-color: rgba(255, 255, 255, 0.5)
 }
 
 .container main h1 {
-  font-size: 5.5vw;
+    font-size: 4rem;
 }
 
 .container main p {
-  font-size: 2vw;
-  color: rgba(255, 255, 255, 0.5);
-  text-align: center;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
 }
 
 .container main span {
-  color: rgb(44, 148, 233);
-  font-size: 1vw;
+    color: rgb(44, 148, 233);
+    font-size: .8rem;
 }
 
 .container main span:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .partners {
-  background-color: white;
-  color: black;
-  height: 50vh;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+    background-color: white;
+    color: black;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .partners h1 {
-  font-size: 5vw;
-  margin: 0;
-  padding: 0;
+    font-size: 5vw;
+    margin: 0;
+    padding: 0;
 }
 
 .partners img {
-  height: 200px;
-  width: 100%;
-  margin: 0;
-  display: inline-block
+    height: 200px;
+    width: 100%;
+    margin: 0;
+    display: inline-block
 }
 
 .partners p {
-  font-size: 2vw;
-  color: rgb(0, 0, 0, .5);
-  padding: 0;
-  margin: 0;
-  margin-bottom: 30px;
+    font-size: 2rem;
+    color: rgb(0, 0, 0, .5);
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
 }
 
 .contact {
-  display: flex;
-  height: 50vw;
-  margin: 0;
-  padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 .contact .left * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .contact .left {
-  width: 50vw;
-  margin: 0;
-  padding: 0;
-  background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact .left h1 {
-  font-size: 10rem;
-  line-height: 120px;
+    font-size: 4rem;
+    line-height: .9;
 }
 
 .contact .right {
-  width: 50vw;
-  margin: 0;
-  padding: 0;
-  background-color: white;
+    margin: 0;
+    padding: 0;
+    background-color: white;
 }
 
 .contact .right * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .contact .right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact .right form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .contact .right form * {
-  width: 750px;
-  height: 200px;
-  margin: 20px 0;
+    width: 300px;
+    margin: 20px 0;
 }
 
 .contact .right form input {
-  height: 100px;
-  font-size: 2rem;
-  padding: 20px;
+    height: 75px;
+    font-size: 1rem;
+    padding: 20px;
 }
 
 .contact .right form textarea {
-  height: 200px;
-  font-size: 2rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  padding: 20px;
+    height: 150px;
+    font-size: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 20px;
 }
 
 .contact .right form button {
-  height: 100px;
-  background-color: black;
-  color: white;
-  font-size: 2rem;
-  transition-duration: .3s;
-  cursor: pointer;
+    height: 75px;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    transition-duration: .3s;
+    cursor: pointer;
 }
 
 .contact .right form button:hover {
-  background-color: rgba(0, 0, 0, 0.877);
+    background-color: rgba(0, 0, 0, 0.877);
 }
 
-@media screen and (max-width: 1600px) {
-  .contact {
-    display: flex;
-    flex-direction: column;
-  }
+@media screen and (min-width: 1024px) {
+    .container main h1 {
+        font-size: 8rem;
+    }
 
-  .contact .right {
-    width: 100vw;
-  }
+    .container main p {
+        font-size: 2.3rem;
+    }
 
-  .contact .left {
-    width: 100vw;
-  }
+    .container main span {
+        font-size: 1.5rem;
+    }
 
-  .contact .left h1 {
-    font-size: 5rem;
-    line-height: 100px;
-    padding: 10px;
-  }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact .left * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact .left {
+        margin: 0;
+        padding: 0;
+        padding-bottom: 100px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact .left h1 {
+        font-size: 8rem;
+        line-height: 100px;
+    }
+
+    .contact .right {
+        margin: 0;
+        padding: 0;
+        background-color: white;
+    }
+
+    .contact .right * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact .right form {
+        display: flex;
+        padding: 25px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contact .right form * {
+        width: 700px;
+        margin: 20px 0;
+    }
+
+    .contact .right form input {
+        height: 75px;
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+
+    .contact .right form textarea {
+        height: 150px;
+        font-size: 1.5rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding: 20px;
+    }
+
+    .contact .right form button {
+        height: 75px;
+        background-color: black;
+        color: white;
+        font-size: 1.5rem;
+        transition-duration: .3s;
+        cursor: pointer;
+    }
+
+    .contact .right form button:hover {
+        background-color: rgba(0, 0, 0, 0.877);
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .container main p {
+        font-size: 2.3rem;
+        margin-left: 500px;
+        margin-right: 500px;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact .left * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact .left {
+        margin: 0;
+        padding: 0;
+        padding-bottom: 100px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vw;
+    }
+
+    .contact .left h1 {
+        font-size: 8rem;
+        line-height: 100px;
+    }
+
+    .contact .right {
+        margin: 0;
+        padding: 0;
+        background-color: white;
+    }
+
+    .contact .right * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact .right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 50vw;
+        justify-content: center;
+    }
+
+    .contact .right form {
+        display: flex;
+        padding: 25px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contact .right form * {
+        width: 700px;
+        margin: 20px 0;
+    }
+
+    .contact .right form input {
+        height: 75px;
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+
+    .contact .right form textarea {
+        height: 150px;
+        font-size: 1.5rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding: 20px;
+    }
+
+    .contact .right form button {
+        height: 75px;
+        background-color: black;
+        color: white;
+        font-size: 1.5rem;
+        transition-duration: .3s;
+        cursor: pointer;
+    }
+
+    .contact .right form button:hover {
+        background-color: rgba(0, 0, 0, 0.877);
+    }
 }

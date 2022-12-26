@@ -78,13 +78,12 @@ export default function Home() {
         <title>Home - Neurathom</title>
       </Head>
       <main>
-        <h1>Notre technologie</h1>
+        <h1>Partenariat</h1>
         <p>
-          Un outil révolutionaire indispensable a l'avancé de la médecine et au
-          coeur des nouvelles avancées technologiques.
+          Vous souhaitez rejoindre l'équipe de Neurathom ou faire un partenariat, vous êtes les bienvenus.
         </p>
         <Link style={{marginBottom: 200}} href="/about">
-          <span>Plus d'information</span>
+          <span>Plus d'informations</span>
         </Link>
         {/* <div></div> */}
       </main>
@@ -106,10 +105,10 @@ export default function Home() {
           </h1>
         </div>
         <div className={styles.right}>
-          <form ref={form} onSubmit={sendEmail}>
+          <form ref={form} style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}} onSubmit={sendEmail}>
             <input
               type="text"
-              placeholder="Your name"
+              placeholder="Votre nom"
               id="user_name"
               name="user_name"
             />
@@ -121,11 +120,12 @@ export default function Home() {
             />
             <textarea
               type="text"
-              placeholder="I want to contact us because..."
+              placeholder="Je veux vous contacter car..."
               id="message"
               name="message"
             />
-            <button type="submit">Send</button>
+            <button type="submit">Envoyée</button>
+            <p style={{color: "black", height: 10}}><a style={{color: "rgb(44, 148, 233)"}} href={"https://discord.gg/ksnGmUQP"}>Discord</a> - <a style={{color: "rgb(44, 148, 233)"}} href={"https://instagram.com/neurathom?igshid=YmMyMTA2M2Y="}>Instagram</a></p>
           </form>
         </div>
       </section>

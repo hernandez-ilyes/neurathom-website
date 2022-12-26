@@ -16,14 +16,14 @@
 }
 
 .topSection h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     margin: 0;
     padding: 0;
 }
 
 .topSection p {
-    font-size: 2rem;
-    margin: 0 30%;
+    font-size: 1.3rem;
+    margin: 0 25px;
     text-align: center;
 }
 
@@ -37,12 +37,12 @@
 }
 
 .contactSection * {
-    width: 50%;
+    width: 300px;
     margin: 10px 0;
     padding: 25px;
     outline: none;
     border: none;
-    
+    font-size: 1rem;
 }
 
 .contactSection button {
@@ -59,4 +59,40 @@
 .contactSection textarea {
     color: black;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media screen and (min-width: 1024px) {
+    .topSection h1 {
+        font-size: 6rem;
+    }
+
+    .topSection p {
+        font-size: 2rem;
+    }
+
+    .contactSection * {
+        width: 700px;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .topSection h1 {
+        font-size: 8rem;
+    }
+
+    .topSection p {
+        font-size: 2rem;
+        margin-left: 500px;
+        margin-right: 500px;
+    }
+
+    .contactSection {
+        padding: 50px
+    }
+
+    .contactSection * {
+        width: 1200px;
+        font-size: 1.5rem;
+    }
 }

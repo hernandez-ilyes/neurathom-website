@@ -16,8 +16,8 @@ export default function Technologie() {
       <section className={styles.topSection}>
         <h1>Comment notre technologie fonctionne ?</h1>
         <p>
-          la technologie de Neurathom est une techniques qui est dite non
-          invasives consistent à placer les électrodes sur le cuir chevelu ,
+          la technique de Neurathom est un technique qui est dit non
+          invasives consistent à placer les électrodes sur le cuir chevelu,
           afin de produire un électroencéphalogramme.
         </p>
       </section>
@@ -32,21 +32,23 @@ export default function Technologie() {
             Si l’utilisateur veut écrire « bonjour » par exemple. Il devra se
             concentrer sur la lettre B dans un premier temps. Le système va
             ensuite mettre en surbrillance alternativement les différentes
-            colonnes puis les différentes lignes .
+            colonnes puis les différentes lignes.
           </p>
+          <img src="moyen_de_communication.png" width="100%"></img>
         </div>
         <div className={styles.left}>
           <h1>Le casque</h1>
           <p>
-            Le casque EEG souple et confortable conçus sera doté d'Électrodes à
+            Le casque EEG souple et confortable conçu sera doté d'Électrodes à
             contact sec. Les électrodes sont dotées de pointes à ressort qui
-            permettent à l’électrode de se conformer à la courbure de la tête,
+            permettent à l’électrode de se conformer à la courbure de la tête;
             ce qui entraîne une usure plus confortable par rapport aux
-            électrodes à contact sec standard. Le Casque EEG offre 37 positions
+            électrodes à contact sec standard. Le casque EEG offre 37 positions
             où les électrodes peuvent être placées à l’aide d’un mécanisme
             d’écrêtage facile à utiliser. Les postes suivent le système standard
             10-20.
           </p>
+          <img src="casque.png" width="100%"></img>
         </div>
       </section>
       <section className={styles.sectionTwoReverse}>
@@ -61,6 +63,7 @@ export default function Technologie() {
             est capable de fournir au moins 600 mA de courant. L’appareil peut
             être utilisé lors de la charge à partir d’une banque d’alimentation.
           </p>
+          <img src="boitier.png" width="100%"></img>
         </div>
         <div className={styles.left}>
           <h1>Comprendre le cerveau</h1>
@@ -79,37 +82,10 @@ export default function Technologie() {
             neurorécepteurs d’une autre cellule, ouvrant les portes de ses
             canaux ioniques et chargeant la cellule
           </p>
+          <img src="comprendre_le_cerveau.png" width={"100%"}></img>
         </div>
       </section>
-      <section className={styles.threed}>
-        <Canvas>
-          <Suspense fallback={null}>
-            <ambientLight />
-            <spotLight
-              intensity={1}
-              angle={1}
-              penumbra={0.9}
-              position={[-2000, -2000, -2000]}
-              color={"#f5f5f5"}
-              castShadow
-            />
-            <spotLight
-              intensity={1}
-              angle={1}
-              penumbra={1}
-              position={[2000, 2000, 2000]}
-              color={"#fff"}
-              castShadow
-            />
-            <OrbitControls
-              enablePan={true}
-              enableZoom={true}
-              enableRotate={true}
-            />
-            <Prototype />
-          </Suspense>
-        </Canvas>
-      </section>
+
     </div>
   );
 }

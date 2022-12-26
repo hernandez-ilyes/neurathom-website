@@ -6,7 +6,7 @@
 }
 
 .topSection {
-    margin: 0 0 250px 0;
+    margin: 0 0 50px 0;
     padding: 0;
     display: flex;
     align-items: center;
@@ -20,58 +20,44 @@
 }
 
 .Title {
-    font-size: 5rem;
+    font-size: 2rem;
     margin: 0;
     padding: 0;
 }
 
 .Description {
-    font-size: 2rem;
+    font-size: .9rem;
     text-align: center;
-    margin: 0 30%;
+    margin: 0 25px;
 }
 
-.PeoplesSection {
-    background-color: #00CA8D;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.TeamTitle {
-    font-size: 4rem
-}
-
-.Peoples {
+.AccordionSection {
+    background-color: #236ede;
+    height: 100%;
+    padding: 75px 25px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    margin-bottom: 100px
 }
 
-.Peoples * {
-    text-align: center;
-    margin: 0 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.AccordionContent {
+    font-size: 1.3rem;
+    color: white;
 }
 
-.Peoples * h2 {
-    font-size: 2rem;
+@media only screen and (min-width: 1024px) {
+    .topSection h1 {
+        font-size: 5rem;
+    }
+
+    .topSection p {
+        font-size: 2rem;
+    }
 }
 
-.Peoples * p {
-    font-size: 1.2rem
-}
-
-.Peoples * div {
-    height: 187px;
-    width: 187px;
-    border-radius: 100%;
-    background-color: white;
+@media only screen and (min-width: 1500px) {
+    .topSection p {
+        margin-left: 500px;
+        margin-right: 500px;
+    }
 }

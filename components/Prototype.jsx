@@ -5,11 +5,15 @@ Command: npx gltfjsx@6.0.9 .\public\prototype\prototype.gltf
 
 import React, { useRef } from "react";
 import { useGLTF, PerspectiveCamera, useAnimations } from "@react-three/drei";
+import {useFrame} from '@react-three/fiber';
 
 export default function Model(props) {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF("prototype/prototype.gltf");
   const { actions } = useAnimations(animations, group);
+
+  useFrame((state, delta) => (group.current.rotation.y += delta))
+
   return (
     <group ref={group} {...props} dispose={null} scale={50}>
       <group name="Scene">
@@ -32,22 +36,22 @@ export default function Model(props) {
           far={1000}
           near={0.1}
           fov={22.9}
-          position={[1.46, 0.43, 0.15]}
+          position={[1.46, 0.43, 2.15]}
           rotation={[-0.84, 1.35, 0.82]}
         />
         <mesh
-          name="Plane"
-          geometry={nodes.Plane.geometry}
-          material={materials.SY_basic_black_rubber}
-          material-color={"red"}
+            name="Plane"
+            geometry={nodes.Plane.geometry}
+            material={materials.SY_basic_black_rubber}
+            material-color={"red"}
         />
         <mesh
-          name="Plane002"
-          geometry={nodes.Plane002.geometry}
-          material={materials.SY_basic_black_rubber}
-          position={[-1, 1, 0]}
-          rotation={[0, 0, Math.PI / 2]}
-          material-color={"red"}
+            name="Plane002"
+            geometry={nodes.Plane002.geometry}
+            material={materials.SY_basic_black_rubber}
+            position={[-1, 1, 0]}
+            rotation={[0, 0, Math.PI / 2]}
+            material-color={"#3178eb"}
         />
         <group name="Cylinder" position={[0, 0.41, -0.08]} scale={0.01}>
           <mesh

@@ -24,7 +24,7 @@ export default function Contact() {
 
     if (e.target[0].value == "" || e.target[1].value == "" || e.target[2].value == "") {
       toast.error(
-        "Merci de remplire la totalité des champs. Nous n'avons pas envoyée le mail.",
+        "Merci de remplir la totalité des champs. Nous n'avons pas envoyé le mail.",
         {
           position: "top-center",
           autoClose: 5000,
@@ -57,7 +57,7 @@ export default function Contact() {
           )
           .then((res) => {
             toast.success(
-              "Vous venez de contactez notre équipe avec succés !",
+              "Vous venez de contacter notre équipe avec succés !",
               {
                 position: "top-center",
                 autoClose: 5000,
@@ -82,8 +82,8 @@ export default function Contact() {
       <div className={styles.topSection}>
         <h1>Contactez-nous</h1>
         <p>
-          Vous souhaitez nous contactez car vous avez une offre à nous proposez
-          ? Parfait, remplie le formulaire ci-dessous afin de nous contactez.
+          Vous souhaitez nous contacter car vous avez une offre à nous proposer
+          ? Parfait, remplissez le formulaire ci-dessous afin de nous contacter.
         </p>
       </div>
 
@@ -103,7 +103,11 @@ export default function Contact() {
           rows="10"
         />
         <button type="submit">Send</button>
+          <div style={{margin: 0, padding: 0}}>
+              <p style={{color: "black", height: 10, padding: 0, margin: 0}}><a style={{color: "whitesmoke", margin: 0, padding: 0}} href={"https://discord.gg/ksnGmUQP"}>Discord</a> - <a style={{color: "whitesmoke", margin: 0, padding: 0}} href={"https://instagram.com/neurathom?igshid=YmMyMTA2M2Y="}>Instagram</a></p>
+          </div>
       </form>
+
     </div>
   );
 }
